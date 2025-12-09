@@ -4,6 +4,6 @@
 // ============================================================================
 
 // Your Hugging Face Space URL (format: username-spacename.hf.space)
-const API_BASE_URL = 'https://siddheshramkrishnachandran05-private.hf.space/execution';
+const API_BASE_URL = 'http://localhost:7860/execution';
 
 export { API_BASE_URL };
