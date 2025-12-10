@@ -10,7 +10,15 @@ import { API_BASE_URL } from './config';
 // API Service
 const api = {
   async getRoute(vehicleId) {
-    const response = await fetch(`${API_BASE_URL}/routes/${vehicleId}`);
+    const response = await fetch(
+  `${API_BASE_URL}/routes/${vehicleId}`,
+  {
+    headers: {
+      "ngrok-skip-browser-warning": "true"
+    }
+  }
+);
+
     if (!response.ok) {
       throw new Error(`Failed to fetch route: ${response.statusText}`);
     }
